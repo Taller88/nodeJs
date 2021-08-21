@@ -12,5 +12,6 @@ console.log("end of server code");
 
 
 app.get('/', function (req, res){
-    res.send("<h1>HI!</h1>")
+    // res.send("<h1>HI!</h1>")
+    res.sendFile(__dirname+"/public/main.html");
 })
